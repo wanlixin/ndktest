@@ -1,0 +1,2 @@
+# ndktest
+ndk test project

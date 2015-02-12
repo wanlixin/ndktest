@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>asio</name>
+	<name>callstack</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -23,14 +23,13 @@
 			<arguments>
 				<dictionary>
 					<key>LaunchConfigHandle</key>
-					<value>&lt;project&gt;/.externalToolBuilders/deploy asio.launch</value>
+					<value>&lt;project&gt;/.externalToolBuilders/deploy callstack.launch</value>
 				</dictionary>
 			</arguments>
 		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.cdt.core.cnature</nature>
-		<nature>org.eclipse.cdt.core.ccnature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>

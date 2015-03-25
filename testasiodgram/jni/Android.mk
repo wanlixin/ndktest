@@ -9,4 +9,6 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)/asio
 
 LOCAL_CPPFLAGS := --std=c++11 -fexceptions -frtti -DASIO_STANDALONE
 
+LOCAL_LDFLAGS := -llog
+
 include $(BUILD_EXECUTABLE)

@@ -1,6 +1,5 @@
 package com.example.injectjar;
 
-import android.app.ActivityThread;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
@@ -9,7 +8,6 @@ import android.graphics.PixelFormat;
 import android.os.Handler;
 import android.os.Looper;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -143,7 +141,8 @@ public class AlertView implements Runnable, OnClickListener {
 	public static void main() {
 		Context context = null;
 		try {
-			context = ActivityThread.currentApplication();
+			context = (Context) Class.forName("android.app.ActivityThread")
+					.getDeclaredMethod("currentApplication").invoke(null);
 
 			if (context != null) {
 				new AlertView(android.os.Process.myPid(),

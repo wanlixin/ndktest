@@ -18,3 +18,14 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+-repackageclasses 'injectjar'
+-allowaccessmodification
+
+-keepclassmembers class com.example.injectjar.RunInSu {
+    public static void main(java.lang.String[]);
+}
+
+-keepclassmembers class com.example.injectjar.AlertView {
+    public static void main();
+}

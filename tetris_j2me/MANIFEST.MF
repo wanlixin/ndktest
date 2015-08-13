@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+MIDlet-1: Tetris, /icons/icon.png, com.wanlixin.tetris.TetrisMid
+MIDlet-Description: Tetris from wanlixin
+MIDlet-Name: Tetris - Games
+MIDlet-Vendor: wanlixin
+MIDlet-Version: 2.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0

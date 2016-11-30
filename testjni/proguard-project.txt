@@ -19,6 +19,6 @@
 #   public *;
 #}
 
--keepclassmembers class com.example.testjni.MainActivity {
-   private static final *;
+-keepclassmembers class * {
+    @com.example.testjni.TestActivity$TestCase <methods>;
 }
